@@ -149,7 +149,7 @@ WITH sales_cte AS (
 
 sales_cte_extend AS (
   SELECT customer_id, 
-	 CASE WHEN days_after_purchase >= 0 and days_after_purchase <= 6 THEN price * 20
+	 CASE WHEN days_after_purchase >= 0 and days_after_purchase <= 7 THEN price * 20
 	 WHEN product_id = 1 THEN price * 20
      ELSE price * 10
      END as points 
